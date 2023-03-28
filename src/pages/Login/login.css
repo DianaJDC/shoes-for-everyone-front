@@ -1,0 +1,15 @@
+.rectangledm {
+  box-sizing: border-box;
+  position: absolute;
+  width: 560px;
+  height: 312px;
+  top: 344px;
+  left: 440px;
+  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+.emaildm {
+  background-color: aqua;
+}

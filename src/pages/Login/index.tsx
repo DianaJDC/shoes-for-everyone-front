@@ -1,16 +1,23 @@
 import Button from "../../components/Button";
+import LabelInput from "../../components/LabelInput";
+import "../Login/login.css";
 
 const Login = () => {
-  return <div> 
-  <div className="text-red-900">EMAIL</div>
-  <input id="email" type="email" placeholder="EMAIL"></input>
-  <div className="text-red-900">SENHA</div>
-  <input id="email" type="email" placeholder="SENHA"></input>
-  <div>
-  <Button>Entrar</Button>
-  </div>
-  
-  </div>;
+  return (
+    <div className="rectangledm">
+      <div>
+        <div className="emaildm">
+          <LabelInput labelText="Email"></LabelInput>
+        </div>
+        <div>
+          <LabelInput labelText="Senha"></LabelInput>
+        </div>
+        <div>
+          <Button>Entrar</Button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Login;
