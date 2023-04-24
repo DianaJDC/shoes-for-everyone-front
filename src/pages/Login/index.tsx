@@ -42,7 +42,7 @@ const Login = () => {
       } else {
         setFormState((prev) => ({
           ...prev,
-          emailError: "Por favor, introduce una dirección de correo electrónico válida.",
+          emailError: "Entrada inválida. Informe um endereço de e-mail válido. Por exemplo, dmorag@gmail.com.",
           isEmailOk: false,
         }));
       }
@@ -58,7 +58,7 @@ const Login = () => {
       } else {
         setFormState((prev) => ({
           ...prev,
-          passwordError: "La contraseña debe tener al menos 8 caracteres.",
+          passwordError: "A senha deve ter pelo menos 8 caracteres.",
           isPasswordOk: false,
         }));
       }
@@ -72,14 +72,14 @@ const Login = () => {
     if (!formState.isEmailOk) {
       setFormState((prev) => ({
         ...prev,
-        emailError: "Por favor, introduce una dirección de correo electrónico válida.",
+        emailError: "Entrada inválida. Informe um endereço de e-mail válido. Por exemplo, dmorag@gmail.com.",
       }));
     }
   
     if (!formState.isPasswordOk) {
       setFormState((prev) => ({
         ...prev,
-        passwordError: "La contraseña debe tener al menos 8 caracteres.",
+        passwordError: "A senha deve ter pelo menos 8 caracteres.",
       }));
     }
   };
